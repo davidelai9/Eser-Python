@@ -1,0 +1,3 @@
+{'inizio': '2023-07-06', 'fine': None, 'desc': 'devo fare la spesa', 'note': None}
+{'inizio': '2023-07-07', 'fine': None, 'desc': 'devo fare gli addominali', 'note': None}
+{'inizio': '2023-07-08', 'fine': None, 'desc': 'chiamare nonna', 'note': None}

@@ -1,0 +1,125 @@
+<!--  
+<!--! Email e numero professore
+<!--? geppino.gregorio@outlook.com
+<!--? +34 654713208
+
+#If the bill was $150.00, split between 5 people, with 12% tip. 
+
+#Each person should pay (150.00 / 5) * 1.12 = 33.6
+#Format the result to 2 decimal places = 33.60
+
+#Tip: There are 2 ways to round a number. You might have to do some Googling to solve this.💪
+
+#Write your code below this line 👇
+
+# bill = 150
+# people = 5
+# tip = 1.12
+
+bill = input("write the total of the bill: ")
+people = input("how many people you are? ")
+tip = input("how much is the tip? ")
+
+split_is =(int(bill)/ int(people) * float(tip))
+
+final_amount = "{:.2f}".format(split_is, 2) or round(split_is, 2)
+
+
+print(f"each person should pay: {final_amount}")
+
+
+
+Inizio corso Generation
+
+
+Differenza compilato e interpretato
+
+Il compilato : Il più famoso è il linguaggio C C++, i linguaggi complilati fanno uso di un compilatore creando un file eseguibile, ed il codice viene tradotto in blocco in linguaggio macchina, quindi il file al suo interno contiene tutte le istruzioni scritte nel linguaggio; Il compilatore mette in un file exe il programma creato con il linguaggio compilato.
+
+L'interpretato invece funzionano tramite il software interprete e ogni linguaggio ha il suo interprete, il codice in questo caso viene eseguito riga per riga quindi una alla volta.
+
+Programma è una sequenza di istruzioni in un linguaggio di programmazione per l'esecuzione da parte di un computer(concetto di algoritmo)
+
+Un algorimento è la procedura che bisogna seguire per risolvere un problema o eseguire un calcolo, il nome deriva da un matematico scienziato Arabo.
+
+Algoritmo = input -> istruzioni -> output
+
+<!-- ! Caratteristiche di Pyton
+    
+    Non usa le graffe ma l'indentazione per i blocchi; è l'unico linguaggio che si comporta cosi 
+
+    saldo = 1000 si legge assegna quello che sta a destra a sinistra, quindi assegna a saldo mille;
+
+    Un espressione è una combinazione di valori per generare uno specifico nuovo valore attraverso gli operatori;
+
+    <!--? Concetti fondamentali
+        
+        come in ogni linguaggio sono -> i tipi di dato, le variabili, e le funzioni
+
+        Tipo di dato = ingredienti o valori che un programma è in grado di manipolare : In pyton ci sono numeri,booleani,stringhe,sequenze(liste,tuple)
+
+        Variabili = "contenitori" per i valori di tipi di dato, porzioni di memoria Ram identificata da un nome ed un contenuto modificabile,
+
+        Funzioni = è un mini-programma nel programma e si intende una porzione di codice che svolge un certo tipo di compito che compie una determinata attività
+
+
+    Bunari -> richiedono 2 operatori
+
+    Unari -> richiedono un valore ad esempio "Not" 
+
+
+    Letterali -> è un valore esplicitato
+
+    ?Pascal case ParolaLunga = 0;
+    ?Camel case parolaLunga = 0;
+    ! Ma in Pyton è convenzione separare le parole con l'underscore Ad esempio -> parola_lunga = 0; 
+
+
+    Python è un linguaggio a tipizzazione dinamica quindi è possibile assegnare e riassegnare valori di qualsiasi tipo ad una variabile
+
+    è anche un linguaggio a tipizzazione forte quindi non è consentito eseguire operazioni tra tipi di dati incompatibili senza una conversione esplicita 
+    Esempio a=10 b="20" c=a + b da un type error
+
+    mentre quelli a tipizzazione debole converte da solo i tipi di dato.(Javascript converte in stringa a in questo caso)
+    Esempio a=10 b="20" c=a+b sarà convertito in strimga o in numero uno dei due dati;
+
+    LO xor è un quarto operando logico 
+
+    And Or Not = precedenza a Not poi And e solo per ultimo Or;
+
+
+    ? Le Sequenze sono sempre ordinate e si ha la possibilità di usare l'index direction e lo slicing
+
+    ? e sono stringhe,liste,tuple,byte, 
+
+    
+
+
+      !print
+    1)print restituisce e stampa in console il suo argomento o i vari argomenti, con la virgola posso stampare più argomenti;
+      !input  
+    2)input restituisce un valore di tipo stringa, che è tutto quello che scriviamo prima di premere il tasto invio; di norma viene utilizzata per valorizzare una variabile Ad es : nome = input("come ti chiami? ")
+      !len
+    3)ti da il numero di caratteri di un valore o di una lista
+      !sorted
+    4)per mettere in ordine crescente i numeri e restituisce sempre una lista indipendentemente da cosa gli passiamo; volendoli mettere in ordine descrescente usiamo   ,reverse=True  
+      !sum
+    5)sum somma tutti i valori all' interno di una lista o float che sia;
+      !max e min
+    6)restituiscono uno il valore maggiore e l'altro il valore minore sempre all'interno di sequenze    
+      !all e any
+    7)restituiscono un valore booleano dove all restituisce True se tutti i valori siano valutabili True mentre ad any per restituire True basta un unico valore true all'interno della lista 
+      !ord
+    8)ord() funzione bilt-in per avere l'ordine numerico delle singole lettere dell'alfabeto (differenti le minusc e le Maiusc)  
+      !chr
+    9)dato un valore numerico restituisce la lettera corrispondente;    
+      !join
+    10)unisci gli elementi di una lista e li trasforma in stringa
+        
+
+    !Le Funzioni
+    
+    Offre una settantina di funzioni built-in già presenti 
+
+
+ -->
