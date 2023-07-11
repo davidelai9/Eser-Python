@@ -6,8 +6,11 @@
 # !ord() funzione bilt-in per avere l'ordine numerico delle singole lettere dell'alfabeto (differenti le minusc e le Maiusc)
 # !chr
 # dato un valore numerico restituisce la lettera corrispondente;    
+import random
 
 parola = input("Dammi una parola da decifrare: ").lower()
+
+numero = random.randint(3,5)
 
 
 
@@ -20,7 +23,7 @@ def cifrario(stringa,numero):
     return lettere
         
     
-print(cifrario(parola,3))    
+print(cifrario(parola,numero))    
 
 def parola_nascosta(stringa):
     lettere2 = []
@@ -29,7 +32,7 @@ def parola_nascosta(stringa):
         lettere2.append(shift)
     return lettere2   
 
-parola_segreta = "".join(parola_nascosta(cifrario(parola,3)))
+parola_segreta = "".join(parola_nascosta(cifrario(parola,numero)))
 
 print(f"La parola cifrata è {parola_segreta}")
 
@@ -37,8 +40,8 @@ print(f"La parola cifrata è {parola_segreta}")
 def decifrario(stringa,numero):
     lettere = []
     for lettera in stringa:
-        shift = chr(ord(lettera) + numero)
+        shift = chr(ord(lettera) - numero)
         lettere.append(shift)
     return  "".join(lettere)
 
-print(f"Questa è la parola originale: {decifrario(parola_segreta, -3)}")
+print(f"Questa è la parola originale: {decifrario(parola_segreta, numero)}")
