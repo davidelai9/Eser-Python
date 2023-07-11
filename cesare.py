@@ -41,4 +41,4 @@ def decifrario(stringa,numero):
         lettere.append(shift)
     return  "".join(lettere)
 
-print(f"Questa è la parola originale : {decifrario(parola_segreta, -3)}")
+print(f"Questa è la parola originale: {decifrario(parola_segreta, -3)}")
