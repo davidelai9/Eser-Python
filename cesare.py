@@ -17,7 +17,7 @@ numero = random.randint(3,5)
 def cifrario(stringa,numero):
     lettere = []
     for lettera in stringa:
-        shift = ord(lettera) + numero
+        shift = (ord(lettera)- 97 + numero) % 26 + 97
         lettere.append(shift)
         
     return lettere
@@ -40,7 +40,7 @@ print(f"La parola cifrata è {parola_segreta}")
 def decifrario(stringa,numero):
     lettere = []
     for lettera in stringa:
-        shift = chr(ord(lettera) - numero)
+        shift = chr((ord(lettera) -97  - numero) % 26 + 97)
         lettere.append(shift)
     return  "".join(lettere)
 

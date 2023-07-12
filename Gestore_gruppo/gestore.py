@@ -105,11 +105,11 @@ def finite():
 
 
 def finisci_attivita():
-    while agenda:
+    while da_finire():  
+        att_da_finire = da_finire()
         while True:
             try:
                 os.system("cls")
-                att_da_finire = da_finire()
 
                 stampa_agenda(att_da_finire)
 
@@ -138,7 +138,7 @@ def finisci_attivita():
                     print("Non hai digitato ne si ne no")
 
 
-    if not agenda:
+    if not da_finire():
         input("Non hai attività premi INVIO per tornare al menu iniziale")
 
 
