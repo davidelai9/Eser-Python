@@ -2,12 +2,15 @@ import time, os, json
 from attivita import Attivita
 
 
+input("Ciao benvenuto al tuo programma agenda, premi Invio per iniziare ")
+
+
 def menu_iniziale():
     """
     Stampa il menù iniziale del programma
     """
     os.system("cls")
-    print("*"*30)
+    print("*"*38)
     print("Fai una scelta")
     print("1: Crea un'attività")
     print("2: Modifica un'attività")
@@ -16,7 +19,8 @@ def menu_iniziale():
     print("5: Visualizzia le attività finite")
     print("6: Cerca un attività")
     print("7: Chiudi il programma")
-    print("*"*30)
+    print("")
+    print("*"*38)
 
 def salva(lista):
     ''' Salva su un file tutta la lista passata '''
@@ -44,7 +48,7 @@ def crea_attivita(descrizione, note):
     Crea un'attivita e la aggiunge all'agenda
     """
     
-    att = Attivita(descrizione, time.ctime(), None, note)
+    att = Attivita(descrizione, time.strftime(format("%Y-%m-%d")), None, note)
     agenda.append(att)
     salva(agenda)
 

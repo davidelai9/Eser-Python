@@ -26,7 +26,7 @@ class Attivita():
         return stringa
     
     def finisci(self):
-        self.fine = time.ctime()
+        self.fine = time.strftime(format("%Y-%m-%d"))
     
     def is_closed(self):
         ''' Restituisce vero in caso l'attività sia finita altrimenti restituisce falso '''
